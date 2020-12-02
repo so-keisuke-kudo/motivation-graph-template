@@ -8,6 +8,14 @@ $ npm i && npm run initalize
 $ yarn && yarn initialize
 ```
 
+## 通常起動
+
+```bash
+$ npm run dev
+# or
+$ yarn dev
+```
+
 ## グラフデータ
 
 `source/chart.json` の値を変更することで反映されます｡
