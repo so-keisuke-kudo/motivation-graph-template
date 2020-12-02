@@ -1,0 +1,25 @@
+{
+  "name": "motivation_graph_template",
+  "version": "1.0.0",
+  "description": "Motivational graph templates.",
+  "license": "MIT",
+  "author": {
+    "name": "Keisuke Kudo",
+    "email": "keisuke.kudo@sold-out.co.jp"
+  },
+  "scripts": {
+    "initialize": "npm run generate && npm run dev",
+    "generate": "mkdir -p source && cp example/chart.json source/chart.json",
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "chart.js": "^2.9.4",
+    "vue": "^3.0.2"
+  },
+  "devDependencies": {
+    "commander": "^6.2.0",
+    "@vue/compiler-sfc": "^3.0.2",
+    "vite": "^1.0.0-rc.8"
+  }
+}
