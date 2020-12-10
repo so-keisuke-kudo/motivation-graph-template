@@ -30,31 +30,106 @@
   "datasets": [
     {
       "data": [
-        0,
-        10,
-        10,
-        10,
-        10,
-        10,
-        10,
-        10,
-        20,
-        20,
-        20,
-        20,
-        20,
-        30,
-        30,
-        30,
-        30,
-        30,
-        50,
-        50,
-        50,
-        50,
-        50,
-        50,
-        50
+        {
+          "motivation": 0,
+          "memo": "memo1"
+        },
+        {
+          "motivation": 10,
+          "memo": "memo2"
+        },
+        {
+          "motivation": 10,
+          "memo": "memo3"
+        },
+        {
+          "motivation": 10,
+          "memo": "memo4"
+        },
+        {
+          "motivation": 10,
+          "memo": "memo5"
+        },
+        {
+          "motivation": 10,
+          "memo": "memo6"
+        },
+        {
+          "motivation": 10,
+          "memo": "memo7"
+        },
+        {
+          "motivation": 10,
+          "memo": "memo8"
+        },
+        {
+          "motivation": 20,
+          "memo": "memo9"
+        },
+        {
+          "motivation": 20,
+          "memo": "memo10"
+        },
+        {
+          "motivation": 20,
+          "memo": "memo11"
+        },
+        {
+          "motivation": 20,
+          "memo": "memo12"
+        },
+        {
+          "motivation": 20,
+          "memo": "memo13"
+        },
+        {
+          "motivation": 30,
+          "memo": "memo14"
+        },
+        {
+          "motivation": 30,
+          "memo": "memo15"
+        },
+        {
+          "motivation": 30,
+          "memo": "memo16"
+        },
+        {
+          "motivation": 30,
+          "memo": "memo17"
+        },
+        {
+          "motivation": 30,
+          "memo": "memo18"
+        },
+        {
+          "motivation": 50,
+          "memo": "memo19"
+        },
+        {
+          "motivation": 50,
+          "memo": "memo20"
+        },
+        {
+          "motivation": 50,
+          "memo": "memo21"
+        },
+        {
+          "motivation": 50,
+          "memo": "memo22"
+        },
+        {
+          "motivation": 50,
+          "memo": "memo23"
+        },
+        {
+          "motivation": 50,
+          "memo": "memo24"
+        },
+        {
+          "motivation": 50,
+          "memo": "memo25"
+        }
       ],
       "borderColor": "rgb(242,99,156)",
       "backgroundColor": "rgb(0,0,0,0)",

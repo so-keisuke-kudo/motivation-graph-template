@@ -14,7 +14,18 @@ export default {
       required: true
     }
   },
+  data() {
+    return {
+      memos: []
+    }
+  },
   mounted() {
+    const {motivations, memos} = this.format(this.chart);
+    if (motivations.length === 0 || motivations.length !== memos.length) {
+      throw Error('JSON format is invalid');
+    }
+    this.chart.datasets[0].data = motivations;
+    this.memos = memos;
     new Chart(
         this.$refs.chart,
         {
@@ -49,12 +60,26 @@ export default {
               displayColors: false,
               callbacks: {
                 title: (item) => `${item[0].label} 歳`,
-                label: (item) => `モチベーション: ${item.value} %`
+                label: (item) => `モチベーション: ${item.value} %`,
+                footer: (item) => this.memos[item[0].label],
               }
             }
           }
         }
     )
-  }
+  },
+  methods: {
+    format: function(json) {
+      const base = json.datasets[0]?.data ?? [];
+      const motivations = [];
+      const memos = [];
+      base.forEach((d) => {
+        motivations.push(d.motivation);
+        memos.push(d.memo);
+      });
+
+      return { motivations, memos };
+    }
+  },
 }
 </script>
